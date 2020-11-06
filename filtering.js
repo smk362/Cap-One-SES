@@ -27,6 +27,7 @@ function loadArticles(url) {
     console.log("loadArticles is running");
     container.textContent = "";
 
+    //Reads the url and creates a JSON
     let request = new XMLHttpRequest();
     request.open('GET', url);
     request.responseType = 'json';
@@ -35,6 +36,7 @@ function loadArticles(url) {
     request.onload = function() {
         var articles = request.response;
 
+        //For each article, creates an entry that includes an image, the title, the source, and a link to the article
         for(let i = 0; i < articles.articles.length; i++) {
             const article = document.createElement('div');
             article.className = "entry";
