@@ -12,6 +12,24 @@ h2 {
     margin-top: 0px;
 }
 
+h3 {
+    color: #6b7380;
+    margin-top: 0px;
+}
+
+p {
+    padding-left: 15px;
+}
+
+a {
+    color: rgb(103, 173, 255);
+}
+
+img {
+    height: 200px;
+    margin-right: 10px;
+}
+
 button {
     background: rgb(103, 173, 255);
     color: white;
@@ -29,12 +47,23 @@ button:hover {
     color: black;
 }
 
+.list {
+    overflow: auto;
+    height: 600px;
+}
+
 .entry {
+    display: flex;
+    flex-direction: row;
     background: rgb(241, 247, 255);
     border: 1px black solid;
     border-radius: 3px;
-    padding: 5px;
+    padding: 10px;
     margin: 15px;
+}
+
+.text {
+    flex: 7;
 }
 
 #filters {
