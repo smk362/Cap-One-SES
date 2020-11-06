@@ -3,16 +3,21 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
-        <script src="filtering.js"></script>
         <title>Search Engine</title>
     </head>
     <body>
         <h1>What are you looking for today?</h1>
 
         <div id="filters">
-            <button>Entertainment</button>
-            <button>Sports</button>
-            <button>Technology</button>
+            <button onclick="entertainSort()">Entertainment</button>
+            <button onclick="sportsSort()">Sports</button>
+            <button onclick="techSort()">Technology</button>
         </div>
+
+        <h2 id="category">Choose a category to begin viewing.</h2>
+
+        <div id="articles"></div>
+
+        <script src="filtering.js"></script>
     </body>
 </html>
