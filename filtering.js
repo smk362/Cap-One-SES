@@ -7,27 +7,28 @@ const category = document.getElementById("category");
 
 container.appendChild(mostRelevant);
 
+//Alerts the user that they are viewing sports news and sends a url with the category specified to sports to the loadArticles function.
 function sportsSort() {
-    console.log("sports");
     category.textContent = "You are viewing Sports News";
     let url = 'http://newsapi.org/v2/top-headlines?country=us&category=sports&apiKey=78b9d599c4f94f8fa3afb1a5458928d6';
     loadArticles(url);
 }
 
+//Alerts the user that they are viewing tech news and sends a url with the category specified to technology to the loadArticles function.
 function techSort() {
-    console.log("tech");
     category.textContent = "You are viewing Technology News";
     let url = 'http://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=78b9d599c4f94f8fa3afb1a5458928d6';
     loadArticles(url);
 }
 
+//Alerts the user that they are viewing entertainment news and sends a url with the category specified to entertainment to the loadArticles function.
 function entertainSort() {
-    console.log("entertainment");
     category.textContent = "You are viewing Entertainment News";
     let url = 'http://newsapi.org/v2/top-headlines?country=us&category=entertainment&apiKey=78b9d599c4f94f8fa3afb1a5458928d6';
     loadArticles(url);
 }
 
+//Loads the articles from the News API into a JSON and reads them
 function loadArticles(url) {
     mostRelevant.textContent = "";
 
